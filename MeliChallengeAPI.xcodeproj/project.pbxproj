@@ -22,7 +22,21 @@
 		95CFA9682A3700C70029A3A9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9672A3700C70029A3A9 /* String+Ext.swift */; };
 		95CFA96B2A376B140029A3A9 /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CFA96A2A376B140029A3A9 /* ItemDetail.storyboard */; };
 		95CFA96D2A376BAD0029A3A9 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA96C2A376BAD0029A3A9 /* ItemDetailVC.swift */; };
+		95CFA9BC2A3792B20029A3A9 /* ItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9BB2A3792B20029A3A9 /* ItemViewModelTests.swift */; };
+		95CFA9C02A3794A00029A3A9 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9BF2A3794A00029A3A9 /* NetworkServiceTests.swift */; };
+		95CFA9C32A3795C40029A3A9 /* ItemDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9C22A3795C40029A3A9 /* ItemDetailTests.swift */; };
+		95CFA9C52A3796950029A3A9 /* MeliChallengeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95CFA9B62A3787A40029A3A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95CFA9352A3696640029A3A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95CFA93C2A3696640029A3A9;
+			remoteInfo = MeliChallengeAPI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		95CFA93D2A3696640029A3A9 /* MeliChallengeAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliChallengeAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +55,11 @@
 		95CFA9672A3700C70029A3A9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		95CFA96A2A376B140029A3A9 /* ItemDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		95CFA96C2A376BAD0029A3A9 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		95CFA9B22A3787A40029A3A9 /* MeliChallengeAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliChallengeAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallengeAPITests.swift; sourceTree = "<group>"; };
+		95CFA9BB2A3792B20029A3A9 /* ItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelTests.swift; sourceTree = "<group>"; };
+		95CFA9BF2A3794A00029A3A9 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		95CFA9C22A3795C40029A3A9 /* ItemDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +71,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95CFA9AF2A3787A40029A3A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -59,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				95CFA93F2A3696640029A3A9 /* MeliChallengeAPI */,
+				95CFA9AA2A3784A50029A3A9 /* MeliChallengeTests */,
+				95CFA9B32A3787A40029A3A9 /* MeliChallengeAPITests */,
 				95CFA93E2A3696640029A3A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				95CFA93D2A3696640029A3A9 /* MeliChallengeAPI.app */,
+				95CFA9B22A3787A40029A3A9 /* MeliChallengeAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +178,64 @@
 			path = ItemDetail;
 			sourceTree = "<group>";
 		};
+		95CFA9AA2A3784A50029A3A9 /* MeliChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MeliChallengeTests;
+			sourceTree = "<group>";
+		};
+		95CFA9AB2A37858D0029A3A9 /* MainTests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9BE2A3794010029A3A9 /* ViewTests */,
+				95CFA9BD2A3793F30029A3A9 /* ViewModelTests */,
+			);
+			path = MainTests;
+			sourceTree = "<group>";
+		};
+		95CFA9B32A3787A40029A3A9 /* MeliChallengeAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9C12A3795B30029A3A9 /* ItemDetailTests */,
+				95CFA9AB2A37858D0029A3A9 /* MainTests */,
+				95CFA9C42A3796740029A3A9 /* NetworkServiceTests */,
+			);
+			path = MeliChallengeAPITests;
+			sourceTree = "<group>";
+		};
+		95CFA9BD2A3793F30029A3A9 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9BB2A3792B20029A3A9 /* ItemViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		95CFA9BE2A3794010029A3A9 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */,
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		95CFA9C12A3795B30029A3A9 /* ItemDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9C22A3795C40029A3A9 /* ItemDetailTests.swift */,
+			);
+			path = ItemDetailTests;
+			sourceTree = "<group>";
+		};
+		95CFA9C42A3796740029A3A9 /* NetworkServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9BF2A3794A00029A3A9 /* NetworkServiceTests.swift */,
+			);
+			path = NetworkServiceTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,6 +259,24 @@
 			productReference = 95CFA93D2A3696640029A3A9 /* MeliChallengeAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		95CFA9B12A3787A40029A3A9 /* MeliChallengeAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CFA9B82A3787A40029A3A9 /* Build configuration list for PBXNativeTarget "MeliChallengeAPITests" */;
+			buildPhases = (
+				95CFA9AE2A3787A40029A3A9 /* Sources */,
+				95CFA9AF2A3787A40029A3A9 /* Frameworks */,
+				95CFA9B02A3787A40029A3A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95CFA9B72A3787A40029A3A9 /* PBXTargetDependency */,
+			);
+			name = MeliChallengeAPITests;
+			productName = MeliChallengeAPITests;
+			productReference = 95CFA9B22A3787A40029A3A9 /* MeliChallengeAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +289,10 @@
 				TargetAttributes = {
 					95CFA93C2A3696640029A3A9 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					95CFA9B12A3787A40029A3A9 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 95CFA93C2A3696640029A3A9;
 					};
 				};
 			};
@@ -204,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				95CFA93C2A3696640029A3A9 /* MeliChallengeAPI */,
+				95CFA9B12A3787A40029A3A9 /* MeliChallengeAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +330,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95CFA9B02A3787A40029A3A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -228,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CFA9682A3700C70029A3A9 /* String+Ext.swift in Sources */,
+				95CFA9C52A3796950029A3A9 /* MeliChallengeAPITests.swift in Sources */,
 				95CFA95B2A36DECB0029A3A9 /* Item.swift in Sources */,
 				95CFA9452A3696640029A3A9 /* ViewController.swift in Sources */,
 				95CFA9592A36DE500029A3A9 /* Service.swift in Sources */,
@@ -240,7 +358,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95CFA9AE2A3787A40029A3A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CFA9C32A3795C40029A3A9 /* ItemDetailTests.swift in Sources */,
+				95CFA9C02A3794A00029A3A9 /* NetworkServiceTests.swift in Sources */,
+				95CFA9BC2A3792B20029A3A9 /* ItemViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95CFA9B72A3787A40029A3A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95CFA93C2A3696640029A3A9 /* MeliChallengeAPI */;
+			targetProxy = 95CFA9B62A3787A40029A3A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		95CFA9462A3696640029A3A9 /* Main.storyboard */ = {
@@ -432,6 +568,50 @@
 			};
 			name = Release;
 		};
+		95CFA9B92A3787A40029A3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS58FUQ5YL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hecosoft.com.MeliChallengeAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeliChallengeAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeliChallengeAPI";
+			};
+			name = Debug;
+		};
+		95CFA9BA2A3787A40029A3A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HS58FUQ5YL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hecosoft.com.MeliChallengeAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeliChallengeAPI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MeliChallengeAPI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -449,6 +629,15 @@
 			buildConfigurations = (
 				95CFA9522A3696660029A3A9 /* Debug */,
 				95CFA9532A3696660029A3A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95CFA9B82A3787A40029A3A9 /* Build configuration list for PBXNativeTarget "MeliChallengeAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CFA9B92A3787A40029A3A9 /* Debug */,
+				95CFA9BA2A3787A40029A3A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
