@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         tf_search.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
     }
     
+    // Button action that calls to fetch items (Second option)
     @IBAction func searchItem(_ sender: Any) {
         let itemToSearch = tf_search.text!
         
@@ -48,6 +49,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // Valiate empty states when items are not fetch or did not find any.
     func hideEmptyView() {
         if items.count < 1 {
             img_emptyList.isHidden = false
@@ -81,6 +83,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = items[indexPath.row]
         
+        // Navigate to detail item view
         let storyBoard = UIStoryboard(name: "ItemDetail", bundle: nil)
         let itemDetailVC = storyBoard.instantiateViewController(withIdentifier: "ItemDetail") as! ItemDetailVC
         itemDetailVC.item = selectedItem

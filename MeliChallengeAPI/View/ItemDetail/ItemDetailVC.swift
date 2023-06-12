@@ -44,6 +44,8 @@ class ItemDetailVC: UIViewController {
         
         lb_itemPrice.text = "$\(item.price)"
         
+        // Get item image from url
+        
         let url = URL(string: item.imageURL)
         
         DispatchQueue.global().async {

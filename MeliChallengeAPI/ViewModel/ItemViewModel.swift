@@ -17,6 +17,7 @@ class ItemViewModel {
     }
     
     func fetchItems(itemToSearch: String, completion: @escaping (Error?) -> Void) {
+        // Call Network Service to fetch items
         networkService.getItemsResult(itemToSearch: itemToSearch) { [weak self] items, error in
             if let error = error {
                 completion(error)
