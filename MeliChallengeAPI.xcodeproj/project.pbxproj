@@ -13,6 +13,13 @@
 		95CFA9482A3696640029A3A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CFA9462A3696640029A3A9 /* Main.storyboard */; };
 		95CFA94A2A3696660029A3A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CFA9492A3696660029A3A9 /* Assets.xcassets */; };
 		95CFA94D2A3696660029A3A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CFA94B2A3696660029A3A9 /* LaunchScreen.storyboard */; };
+		95CFA9592A36DE500029A3A9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9582A36DE500029A3A9 /* Service.swift */; };
+		95CFA95B2A36DECB0029A3A9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA95A2A36DECB0029A3A9 /* Item.swift */; };
+		95CFA95D2A36DEE10029A3A9 /* ItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA95C2A36DEE10029A3A9 /* ItemResponse.swift */; };
+		95CFA95F2A36E0800029A3A9 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA95E2A36E0800029A3A9 /* ItemViewModel.swift */; };
+		95CFA9622A36E8770029A3A9 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 95CFA9612A36E8770029A3A9 /* ObjectMapper */; };
+		95CFA9652A36F8E30029A3A9 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9642A36F8E30029A3A9 /* ItemViewCell.swift */; };
+		95CFA9682A3700C70029A3A9 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9672A3700C70029A3A9 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		95CFA9492A3696660029A3A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95CFA94C2A3696660029A3A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95CFA94E2A3696660029A3A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CFA9582A36DE500029A3A9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		95CFA95A2A36DECB0029A3A9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		95CFA95C2A36DEE10029A3A9 /* ItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemResponse.swift; sourceTree = "<group>"; };
+		95CFA95E2A36E0800029A3A9 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		95CFA9642A36F8E30029A3A9 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		95CFA9672A3700C70029A3A9 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CFA9622A36E8770029A3A9 /* ObjectMapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +70,13 @@
 		95CFA93F2A3696640029A3A9 /* MeliChallengeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				95CFA9662A3700B90029A3A9 /* Extensions */,
+				95CFA9572A36DE3F0029A3A9 /* Network */,
 				95CFA9562A36A9370029A3A9 /* View */,
 				95CFA9552A36A92F0029A3A9 /* ViewModel */,
 				95CFA9542A36A9250029A3A9 /* Model */,
 				95CFA9402A3696640029A3A9 /* AppDelegate.swift */,
 				95CFA9422A3696640029A3A9 /* SceneDelegate.swift */,
-				95CFA9442A3696640029A3A9 /* ViewController.swift */,
 				95CFA9492A3696660029A3A9 /* Assets.xcassets */,
 				95CFA94B2A3696660029A3A9 /* LaunchScreen.storyboard */,
 				95CFA94E2A3696660029A3A9 /* Info.plist */,
@@ -72,6 +87,8 @@
 		95CFA9542A36A9250029A3A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				95CFA95A2A36DECB0029A3A9 /* Item.swift */,
+				95CFA95C2A36DEE10029A3A9 /* ItemResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +96,7 @@
 		95CFA9552A36A92F0029A3A9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				95CFA95E2A36E0800029A3A9 /* ItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -86,9 +104,35 @@
 		95CFA9562A36A9370029A3A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				95CFA9462A3696640029A3A9 /* Main.storyboard */,
+				95CFA9632A36F8B30029A3A9 /* Main */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		95CFA9572A36DE3F0029A3A9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9582A36DE500029A3A9 /* Service.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		95CFA9632A36F8B30029A3A9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9442A3696640029A3A9 /* ViewController.swift */,
+				95CFA9642A36F8E30029A3A9 /* ItemViewCell.swift */,
+				95CFA9462A3696640029A3A9 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		95CFA9662A3700B90029A3A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95CFA9672A3700C70029A3A9 /* String+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +151,9 @@
 			dependencies = (
 			);
 			name = MeliChallengeAPI;
+			packageProductDependencies = (
+				95CFA9612A36E8770029A3A9 /* ObjectMapper */,
+			);
 			productName = MeliChallengeAPI;
 			productReference = 95CFA93D2A3696640029A3A9 /* MeliChallengeAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 95CFA9342A3696640029A3A9;
+			packageReferences = (
+				95CFA9602A36E8770029A3A9 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = 95CFA93E2A3696640029A3A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,9 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95CFA9682A3700C70029A3A9 /* String+Ext.swift in Sources */,
+				95CFA95B2A36DECB0029A3A9 /* Item.swift in Sources */,
 				95CFA9452A3696640029A3A9 /* ViewController.swift in Sources */,
+				95CFA9592A36DE500029A3A9 /* Service.swift in Sources */,
+				95CFA95F2A36E0800029A3A9 /* ItemViewModel.swift in Sources */,
 				95CFA9412A3696640029A3A9 /* AppDelegate.swift in Sources */,
+				95CFA95D2A36DEE10029A3A9 /* ItemResponse.swift in Sources */,
 				95CFA9432A3696640029A3A9 /* SceneDelegate.swift in Sources */,
+				95CFA9652A36F8E30029A3A9 /* ItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95CFA9602A36E8770029A3A9 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95CFA9612A36E8770029A3A9 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95CFA9602A36E8770029A3A9 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95CFA9352A3696640029A3A9 /* Project object */;
 }

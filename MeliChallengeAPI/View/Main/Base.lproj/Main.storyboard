@@ -20,21 +20,22 @@
                                 <rect key="frame" x="0.0" y="165" width="393" height="687"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemViewCell" rowHeight="146" id="yge-PF-lVj">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="146"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemViewCell" rowHeight="85" id="yge-PF-lVj" customClass="ItemViewCell" customModule="MeliChallengeAPI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yge-PF-lVj" id="9OI-8e-qQK">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="146"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TGt-iw-SBN">
-                                                    <rect key="frame" x="15" y="0.0" width="100" height="131"/>
+                                                    <rect key="frame" x="15" y="5" width="50" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="EQs-Jr-NLu"/>
+                                                        <constraint firstAttribute="width" constant="50" id="EQs-Jr-NLu"/>
+                                                        <constraint firstAttribute="height" constant="75" id="Qou-oP-gMg"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple iPhone 14 (128 GB) - Blanco estelar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJB-k1-MSP">
-                                                    <rect key="frame" x="130" y="11" width="228" height="43"/>
+                                                    <rect key="frame" x="80" y="11" width="293" height="43"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="MYB-xu-RQY"/>
                                                     </constraints>
@@ -42,28 +43,20 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 16,379" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9X-dR-0NC">
-                                                    <rect key="frame" x="130" y="59" width="228" height="28"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="28" id="rE9-cx-Bp0"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="q9X-dR-0NC" firstAttribute="top" secondItem="qJB-k1-MSP" secondAttribute="bottom" constant="5" id="2Vu-3f-SO5"/>
-                                                <constraint firstItem="q9X-dR-0NC" firstAttribute="leading" secondItem="TGt-iw-SBN" secondAttribute="trailing" constant="15" id="3rx-nW-X2J"/>
                                                 <constraint firstItem="TGt-iw-SBN" firstAttribute="leading" secondItem="9OI-8e-qQK" secondAttribute="leading" constant="15" id="GN9-Jy-rlO"/>
+                                                <constraint firstAttribute="bottom" secondItem="TGt-iw-SBN" secondAttribute="bottom" constant="10" id="SZ3-h1-qvZ"/>
                                                 <constraint firstItem="qJB-k1-MSP" firstAttribute="top" secondItem="9OI-8e-qQK" secondAttribute="topMargin" id="VPF-zX-4UP"/>
-                                                <constraint firstItem="TGt-iw-SBN" firstAttribute="top" secondItem="9OI-8e-qQK" secondAttribute="top" id="bah-66-4PU"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="q9X-dR-0NC" secondAttribute="trailing" constant="15" id="fbg-pu-5V7"/>
-                                                <constraint firstAttribute="bottom" secondItem="TGt-iw-SBN" secondAttribute="bottom" constant="15" id="lVp-Ao-EL2"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="qJB-k1-MSP" secondAttribute="trailing" constant="15" id="qp8-hu-JCY"/>
+                                                <constraint firstItem="TGt-iw-SBN" firstAttribute="top" secondItem="9OI-8e-qQK" secondAttribute="top" constant="5" id="bah-66-4PU"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="qJB-k1-MSP" secondAttribute="trailing" id="qp8-hu-JCY"/>
                                                 <constraint firstItem="qJB-k1-MSP" firstAttribute="leading" secondItem="TGt-iw-SBN" secondAttribute="trailing" constant="15" id="zCM-Pc-7SF"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemDescription" destination="qJB-k1-MSP" id="05U-VB-JJZ"/>
+                                            <outlet property="itemImage" destination="TGt-iw-SBN" id="kET-8r-7iV"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -100,6 +93,9 @@
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <action selector="searchItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLM-RF-Qvq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
