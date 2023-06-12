@@ -35,31 +35,6 @@ class NetworkService {
                     
                     let items = Mapper<Item>().mapArray(JSONArray: itemResponseJSON)
                     completion(items, nil)
-                    // Create dispatch group to wait for all image downloads
-//                    let imageDownloadGroup = DispatchGroup()
-//                    
-//                    // Fetch image for each item
-//                    for item in items {
-//                        if let imageURLString = item.imageURL, let imageURL = URL(string: imageURLString) {
-//                            imageDownloadGroup.enter()
-//                            URLSession.shared.dataTask(with: imageURL) { data, response, error in
-//                                defer {
-//                                    imageDownloadGroup.leave()
-//                                }
-//                                
-//                                guard let data = data, error == nil else {
-//                                    return
-//                                }
-//                                
-//                                item.imageURL = data
-//                            }.resume()
-//                        }
-//                    }
-//                    
-//                    // Notify when all image downloads are completed
-//                    imageDownloadGroup.notify(queue: .main) {
-//                        completion(items, nil)
-//                    }
                 } else {
                     completion(nil, nil)
                 }

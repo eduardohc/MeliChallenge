@@ -77,4 +77,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.itemDescription.text = item.title
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedItem = items[indexPath.row]
+        
+        let storyBoard = UIStoryboard(name: "ItemDetail", bundle: nil)
+        let itemDetailVC = storyBoard.instantiateViewController(withIdentifier: "ItemDetail") as! ItemDetailVC
+        itemDetailVC.item = selectedItem
+        self.navigationController?.pushViewController(itemDetailVC, animated: true)
+    }
 }
