@@ -56,6 +56,9 @@
 		95CFA93F2A3696640029A3A9 /* MeliChallengeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				95CFA9562A36A9370029A3A9 /* View */,
+				95CFA9552A36A92F0029A3A9 /* ViewModel */,
+				95CFA9542A36A9250029A3A9 /* Model */,
 				95CFA9402A3696640029A3A9 /* AppDelegate.swift */,
 				95CFA9422A3696640029A3A9 /* SceneDelegate.swift */,
 				95CFA9442A3696640029A3A9 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				95CFA94E2A3696660029A3A9 /* Info.plist */,
 			);
 			path = MeliChallengeAPI;
+			sourceTree = "<group>";
+		};
+		95CFA9542A36A9250029A3A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95CFA9552A36A92F0029A3A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		95CFA9562A36A9370029A3A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
