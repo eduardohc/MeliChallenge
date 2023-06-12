@@ -1,8 +1,8 @@
-**MeliChallengeAPI**
+# **MeliChallengeAPI**
 
 This repository contains the code for an iOS app called MeliChallengeAPI. The app allows users to search for items using the MercadoLibre API and view detailed information about the selected item.
 
-**Features**
+## **Features**
 
 MVVM architecture pattern
 Network requests using URLSession
@@ -10,7 +10,7 @@ JSON decoding with ObjectMapper
 Asynchronous image loading
 Unit tests for various components
 
-**Installation**
+## **Installation**
 
 To run the app locally, follow these steps:
 
@@ -19,7 +19,7 @@ Open the project in Xcode
 Build and run the app on the desired simulator or device
 
 
- **Usage**
+## **Usage**
   
 The app consists of the following screens:
 
@@ -27,7 +27,7 @@ Main Screen: Displays a search field, a search button, a table view to show sear
 
 Item Detail Screen: Shows detailed information about the selected item, including its description, condition, price, and an image.
 
-**Code Highlights**
+## **Code Highlights**
   
 ViewController: Handles user interactions on the Main Screen, such as searching for items and updating the table view. It also navigates to the Item Detail Screen when an item is selected.
 
@@ -37,7 +37,8 @@ ItemViewModel: Manages the data and business logic related to items. It uses the
 
 ItemDetailVC: Displays the detailed information of a selected item. It sets the item's properties to the corresponding UI elements, including the item description, condition, price, and image. The image is loaded asynchronously from the provided URL.
 
-**Future Improvements**
+## **Future Improvements**
+  
 Improved error handling and error messages for network requests.
 Implementing caching mechanisms for fetched items and images.
 UI enhancements and better user feedback during network operations.
