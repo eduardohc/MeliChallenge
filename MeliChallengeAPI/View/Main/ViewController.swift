@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         initializeViews()
     }
     
-    private func initializeViews() {
+    func initializeViews() {
         tableView_items.delegate = self
         tableView_items.dataSource = self
         tf_search.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
@@ -75,6 +75,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemViewCell", for: indexPath) as! ItemViewCell
         let item = items[indexPath.row]
         cell.itemDescription.text = item.title
+        
         return cell
     }
     
