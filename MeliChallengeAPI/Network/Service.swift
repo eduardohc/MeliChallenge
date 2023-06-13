@@ -17,6 +17,7 @@ class NetworkService {
         let url = URL(string: baseURL + itemToSearch)!
         
         // Perform fetch usin urlsession with url given
+
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 completion(nil, error)
@@ -29,6 +30,7 @@ class NetworkService {
             }
             
             // Serialize object taking results from data response
+
             do {
                 let json = try JSONSerialization.jsonObject(with: data)
                 
@@ -36,6 +38,7 @@ class NetworkService {
                    let itemResponseJSON = jsonDict["results"] as? [[String: Any]] {
                     
                     // Map item response
+
                     let items = Mapper<Item>().mapArray(JSONArray: itemResponseJSON)
                     completion(items, nil)
                 } else {
