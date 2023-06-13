@@ -1,5 +1,5 @@
 //
-//  MeliChallengeAPITests.swift
+//  ViewControllerTest.swift
 //  MeliChallengeAPITests
 //
 //  Created by Eduardo Hernandez on 12/06/23.
@@ -71,7 +71,7 @@ final class ViewControllerTests: XCTestCase {
     
     func testNumberOfRowsInSection() {
         // Set up initial state
-        sut.items = 
+        sut.items = NetworkServiceTests().testGettingItems()
         
         // Call the method under test
         let numberOfRows = sut.tableView(sut.tableView_items, numberOfRowsInSection: 0)
@@ -83,14 +83,11 @@ final class ViewControllerTests: XCTestCase {
     func testCellForRowAt() {
         // Set up initial state
         let tableView = UITableView()
-        let itemTitles = ["Test item"]
         
         tableView.register(ItemViewCell.self, forCellReuseIdentifier: "ItemViewCell")
         tableView.dataSource = sut
         
-        sut.items = itemTitles.map { Item(title: $0) }
-//        sut.items = [Item(title: "Test Item")]
-//        [Item(title: "Test Item")]
+        sut.items = [NetworkServiceTests().testGettinSingleItem()]
         
         // Call the method under test
         let indexPath = IndexPath(row: 0, section: 0)
@@ -105,7 +102,7 @@ final class ViewControllerTests: XCTestCase {
         let navigationController = UINavigationController()
         let storyboard = UIStoryboard(name: "ItemDetail", bundle: nil)
         let itemDetailVC = storyboard.instantiateViewController(withIdentifier: "ItemDetail") as! ItemDetailVC
-        sut.items = [Item(title: ("Test Item"))]
+        sut.items = [NetworkServiceTests().testGettinSingleItem()]
         navigationController.pushViewController(sut, animated: false)
         navigationController.pushViewController(itemDetailVC, animated: false)
         

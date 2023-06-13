@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import ObjectMapper
 @testable import MeliChallengeAPI
 
 final class ItemDetailTests: XCTestCase {
@@ -17,7 +18,7 @@ final class ItemDetailTests: XCTestCase {
             let itemDetailVC = ItemDetailVC()
             
             // Create a mock item
-            let mockItem = Item(title: "Test Item", condition: "new", price: 10.99, imageURL: "https://example.com/image.jpg")
+            let mockItem = NetworkServiceTests().testGettinSingleItem()
             
             // Set the mock item to the item property of ItemDetailVC
             itemDetailVC.item = mockItem

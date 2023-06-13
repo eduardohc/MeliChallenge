@@ -25,7 +25,7 @@
 		95CFA9BC2A3792B20029A3A9 /* ItemViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9BB2A3792B20029A3A9 /* ItemViewModelTests.swift */; };
 		95CFA9C02A3794A00029A3A9 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9BF2A3794A00029A3A9 /* NetworkServiceTests.swift */; };
 		95CFA9C32A3795C40029A3A9 /* ItemDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9C22A3795C40029A3A9 /* ItemDetailTests.swift */; };
-		95CFA9C52A3796950029A3A9 /* MeliChallengeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */; };
+		95CFA9C72A383CC50029A3A9 /* ViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFA9C62A383CC50029A3A9 /* ViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		95CFA96A2A376B140029A3A9 /* ItemDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
 		95CFA96C2A376BAD0029A3A9 /* ItemDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
 		95CFA9B22A3787A40029A3A9 /* MeliChallengeAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliChallengeAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliChallengeAPITests.swift; sourceTree = "<group>"; };
 		95CFA9BB2A3792B20029A3A9 /* ItemViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModelTests.swift; sourceTree = "<group>"; };
 		95CFA9BF2A3794A00029A3A9 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
 		95CFA9C22A3795C40029A3A9 /* ItemDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTests.swift; sourceTree = "<group>"; };
+		95CFA9C62A383CC50029A3A9 /* ViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				95CFA93F2A3696640029A3A9 /* MeliChallengeAPI */,
-				95CFA9AA2A3784A50029A3A9 /* MeliChallengeTests */,
 				95CFA9B32A3787A40029A3A9 /* MeliChallengeAPITests */,
 				95CFA93E2A3696640029A3A9 /* Products */,
 			);
@@ -178,13 +177,6 @@
 			path = ItemDetail;
 			sourceTree = "<group>";
 		};
-		95CFA9AA2A3784A50029A3A9 /* MeliChallengeTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MeliChallengeTests;
-			sourceTree = "<group>";
-		};
 		95CFA9AB2A37858D0029A3A9 /* MainTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +207,7 @@
 		95CFA9BE2A3794010029A3A9 /* ViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				95CFA9B42A3787A40029A3A9 /* MeliChallengeAPITests.swift */,
+				95CFA9C62A383CC50029A3A9 /* ViewControllerTest.swift */,
 			);
 			path = ViewTests;
 			sourceTree = "<group>";
@@ -345,7 +337,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CFA9682A3700C70029A3A9 /* String+Ext.swift in Sources */,
-				95CFA9C52A3796950029A3A9 /* MeliChallengeAPITests.swift in Sources */,
 				95CFA95B2A36DECB0029A3A9 /* Item.swift in Sources */,
 				95CFA9452A3696640029A3A9 /* ViewController.swift in Sources */,
 				95CFA9592A36DE500029A3A9 /* Service.swift in Sources */,
@@ -364,6 +355,7 @@
 			files = (
 				95CFA9C32A3795C40029A3A9 /* ItemDetailTests.swift in Sources */,
 				95CFA9C02A3794A00029A3A9 /* NetworkServiceTests.swift in Sources */,
+				95CFA9C72A383CC50029A3A9 /* ViewControllerTest.swift in Sources */,
 				95CFA9BC2A3792B20029A3A9 /* ItemViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
